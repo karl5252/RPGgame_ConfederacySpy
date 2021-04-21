@@ -1,0 +1,37 @@
+------------------------------------DESIGN------------------------------------
+WPF & .NET based
+Data stored using serialized file (.sav, .cfg)
+Data loaded into the game using serialized file (xml)
+game map loaded using *.xlsx  into engine as an two-dimensional array
+each coordinate will have a special event assigned. 
+special event can be merchant, collectible, enemy encounter, gate (need a special item to went through)
+global random events (few that change difficulty dynamics eg Refugee influx-> reduces Defeat Points by int n value due to straining CorSec processing capability; Republic Propaganda success-> harder to keep low profile-> increase of Defeat Points by int n value)
+*cinematics for random events?
+character wil have few special characteristics like attributes: Strength, Dexterity, Intelligence, Endurance, Luck.
+Attack value will be calculated using weapon base attack range (random number from range) and STR attribiute
+Defensive value will be calculated using armor/ clothing base  value and Endurance
+
+Lower level encounter enemy might be a drug dealer ("wanna some deathstikzz?") or a thug. Highest level encounter will be specialised ARC cloned trooper(s).
+Point is to scout map for useful information that will be a randomized loot from enemies, or can be bought fromcertain merchants (infobroker) or gatheredas 100% chance from 'boss'enemies.
+Idea torethink is to add 'diversion' capability that can at random increase or decrease 'visibility'of the spy and at random produce valuable intel.
+
+There will be approx 5-10 races of aliens to choose with special ability each giving a permament boost eg Clawdithe spy will start with minus value Defeat Points due to it`s shapeshifting ability allowing such spy to remain undetected for far longer.
+turn based  gameplay
+
+One of game conditions is victory- defeat points. VIctory points are earned by gaining "intel" defeat points are growing over time. Mechanic is toprevent player for repeateing encounters for too long  and grow too powerful.
+
+-----------------------------------STORY ARC----------------------------------
+History starts in the end days of the Old Republic. Scales of war seem to tip to the side of oppressive Republic. While machines fight on the forefront... Droid can`t mingle 
+easily and infiltrate hear of the enemy.
+You are a young alien from one of the systems that belongs/ed to the Confederacy of Independent Systems. Idealistic as you are decided to take matters in own hands.
+YOu came to Coruscant to gather intel that might help you, your family, your planet and whole Outer Rim remove the Republic boot on your arched backs.
+You came there with one of the many Outer Rim refugee transports that flood Coruscant air-corridors.
+ You start at Coruscant Downs (Lowest habitable level) in a "hideout" from where you scout the city scape piece by piece in search of something useful.
+-------------------------------------TODO-------------------------------------
+format GUI
+add inventory
+add movememnt logic
+add attack logic
+add favourite weapon
+add map 'visited, hidden places'
+---------------------------------FUTURE STUFF---------------------------------
