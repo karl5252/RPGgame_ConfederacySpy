@@ -17,6 +17,11 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Content="Test"></Label>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="BlanchedAlmond"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="AliceBlue"></Label>
+        <Label Grid.Row="1" Grid.Column="1" Content = "Game Data" Background="AliceBlue"></Label>
+        <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quest" Background="AliceBlue"></Label>
+        <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="AliceBlue"></Label>
+
     </Grid>
 </Window>
