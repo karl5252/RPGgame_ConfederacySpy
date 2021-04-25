@@ -8,20 +8,48 @@
         Title="GameWindow" Height="798" Width="1624">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="225"></RowDefinition>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="225"/>
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="250"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="BlanchedAlmond"></Label>
-        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="AliceBlue"></Label>
-        <Label Grid.Row="1" Grid.Column="1" Content = "Game Data" Background="AliceBlue"></Label>
-        <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quest" Background="AliceBlue"></Label>
-        <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="AliceBlue"></Label>
+
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="BlanchedAlmond"/>
+
+        <Grid Grid.Row="1" Grid.Column="0" Background="BlanchedAlmond">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding currentPlayer.Name}"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class/Race:"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding currentPlayer.CharacterClass}"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Hit Points:"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding currentPlayer.HitPoints}"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Level:"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding currentPlayer.Level}"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="Experience:"/>
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding currentPlayer.ExperiencePoints}"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Credits:"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding currentPlayer.Gold}"/>
+
+        </Grid>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Beige"/>
+        <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="BurlyWood"/>
+        <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="Lavender"/>
 
     </Grid>
 </Window>
