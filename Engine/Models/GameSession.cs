@@ -7,13 +7,13 @@ using Engine.Models;
 
 namespace Engine.Models
 {
-    class GameSession
+    public class GameSession
     {
-        Character currentPlayer { get; set; }
-        GameSession()
+        public Character currentPlayer { get; set; }
+        public GameSession()
         {
             currentPlayer = new Character();
-            currentPlayer.Name = "Han Solo";
+            currentPlayer.Name = "Han Swolo";
             currentPlayer.CharacterClass = "Clawdithe";
             currentPlayer.HitPoints = 10;
             currentPlayer.ExperiencePoints = 0;
