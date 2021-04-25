@@ -29,5 +29,9 @@ namespace Game
             _gameSession = new GameSession();
             DataContext = _gameSession;
         }
+        private void ButtonBase_Click(object sender,RoutedEventArgs e)
+        {
+            _gameSession.currentPlayer.ExperiencePoints = _gameSession.currentPlayer.ExperiencePoints + 10;
+        }
     }
 }

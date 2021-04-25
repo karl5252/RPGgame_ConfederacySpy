@@ -39,12 +39,13 @@
             <Label Grid.Row="1" Grid.Column="1" Content="{Binding currentPlayer.CharacterClass}"/>
             <Label Grid.Row="2" Grid.Column="0" Content="Hit Points:"/>
             <Label Grid.Row="2" Grid.Column="1" Content="{Binding currentPlayer.HitPoints}"/>
-            <Label Grid.Row="3" Grid.Column="0" Content="Level:"/>
-            <Label Grid.Row="3" Grid.Column="1" Content="{Binding currentPlayer.Level}"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Credits:"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding currentPlayer.Gold}"/>
             <Label Grid.Row="4" Grid.Column="0" Content="Experience:"/>
             <Label Grid.Row="4" Grid.Column="1" Content="{Binding currentPlayer.ExperiencePoints}"/>
-            <Label Grid.Row="5" Grid.Column="0" Content="Credits:"/>
-            <Label Grid.Row="5" Grid.Column="1" Content="{Binding currentPlayer.Gold}"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding currentPlayer.Level}"/>
+            <Button Grid.Row="6" Grid.Column="1" Content=" Add XP " Click="ButtonBase_Click"></Button>
 
         </Grid>
         <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Beige"/>
